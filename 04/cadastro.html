@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>CADASTRO</h1>
-<form>
+<form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="get">
     login:<br>
     <input type="text" name="login"><br>
     senha:<br>
@@ -32,8 +32,31 @@
     <input type="checkbox" name="interesses">politica<br>
     <input type="checkbox" name="interesses">celebridades<br>
     <br>
+    Estado:<br/>
+			<select name="estados" id="estados">
+			  <option value="saopaulo">SP</option>
+			  <option value="piaui">PI</option>
+			  <option value="maranhao">MA</option>
+			  <option value="ceara">CE</option>
+			</select>
+		<br/>
 
-    <input type="button" value="enviar">
+		Observações:<br/>
+			<textarea>
+				
+			</textarea>
+
+		<br/>
+    
+
+    <input type="submit" value="enviar" class="butao">
 </form>
 </body>
 </html>
+<style>
+    .butao{
+        color: blue;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+        animation-duration:0ms
+    }
+</style>
